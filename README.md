@@ -31,7 +31,7 @@ flowchart LR
 ### 🛠️ Tecnologias Utilizadas
 - Banco de Dados:  SQL Server
 
-- Linguagem: SQL 
+- Linguagem: SQL (T-SQL)
 
 - Ferramenta de Modelagem: Draw.io
 
