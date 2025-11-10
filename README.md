@@ -17,17 +17,10 @@ O projeto foi inicialmente inspirado no tutorial "SQL Data Warehouse Project" do
 * Resolver problemas de negócio através de views e data marts otimizados para análise.
 
 ## 🏗️ Arquitetura Estendida (5 Layers)
+Diferente da abordagem tradicional de 3 camadas, este projeto adota uma arquitetura de 5 camadas.
+![Diagrama Data Warehouse](assets/diagramadatawarehouse.png.png)
 
-Diferente da abordagem tradicional de 3 camadas (Staging -> Core -> Marts), este projeto adota uma arquitetura de 5 camadas para lidar melhor com a complexidade e qualidade dos dados:
 
-```mermaid
-flowchart LR
-    A[Source Data] --> B[(1. Landing/Raw)]
-    B --> C[(2. Staging)]
-    C --> D[(3. ODS/Intermediary)]
-    D --> E[(4. DWH Core)]
-    E --> F[(5. Data Marts)]
-```
 ### 🛠️ Tecnologias Utilizadas
 - Banco de Dados:  SQL Server
 
