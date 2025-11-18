@@ -46,7 +46,7 @@ BEGIN
 		/*BULK INSERT É ADICIONAR TODOS OS DADOS DO SOURCE DE UMA VEZ NA TABELA
 		DIFERENTE DO INSERT COMUM QUE ADICIONA LINHA POR LINHA*/
 		BULK INSERT raw_data_layer.crm_cust_info
-		FROM 'C:\Users\Rafael\Documents\datawarehouse\datasets\source_crm\cust_info.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS
+		FROM '\datasets\source_crm\cust_info.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS | ADICIONE O CAMINHO DO SEU COMPUTADOR
 		WITH (
 			FIRSTROW = 2, -- DIZ PARA A DATABASE QUE A PRIMEIRA LINHA É A SEGUNDA | CONSIDEIRANDO QUE A PRIMEIRA LINHA SERIA O NOME DAS COLUNAS NO ARQUIVO FONTE
 			FIELDTERMINATOR = ',' -- DIZ PARA A DATABASE QUAL O SEPARADOR DE DADOS DO ARQUIVO, NESSE CASO A ','
@@ -61,7 +61,7 @@ BEGIN
 
 		PRINT 'Inserindo dados na tabela: prd_info'
 		BULK INSERT raw_data_layer.prd_info
-		FROM 'C:\Users\Rafael\Documents\datawarehouse\datasets\source_crm\prd_info.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS
+		FROM '\datasets\source_crm\prd_info.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS | ADICIONE O CAMINHO DO SEU COMPUTADOR
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',' 
@@ -78,7 +78,7 @@ BEGIN
 
 		PRINT 'Inserindo dados na tabela: sales_details'
 		BULK INSERT raw_data_layer.sales_details
-		FROM 'C:\Users\Rafael\Documents\datawarehouse\datasets\source_crm\sales_details.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS
+		FROM '\datasets\source_crm\sales_details.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS | ADICIONE O CAMINHO DO SEU COMPUTADOR
 		WITH (
 			FIRSTROW = 2, 
 			FIELDTERMINATOR = ',' 
@@ -97,7 +97,7 @@ BEGIN
 
 		PRINT 'Inserindo dados na tabela: cust_az12'
 		BULK INSERT raw_data_layer.cust_az12
-		FROM 'C:\Users\Rafael\Documents\datawarehouse\datasets\source_erp\CUST_AZ12.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS
+		FROM '\datasets\source_erp\CUST_AZ12.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS | ADICIONE O CAMINHO DO SEU COMPUTADOR
 		WITH (
 			FIRSTROW = 2, 
 			FIELDTERMINATOR = ',' 
@@ -112,7 +112,7 @@ BEGIN
 
 		PRINT 'Inserindo dados na tabela: loc_a101'
 		BULK INSERT raw_data_layer.loc_a101
-		FROM 'C:\Users\Rafael\Documents\datawarehouse\datasets\source_erp\LOC_A101.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS
+		FROM '\datasets\source_erp\LOC_A101.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS | ADICIONE O CAMINHO DO SEU COMPUTADOR
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',' 
@@ -128,7 +128,7 @@ BEGIN
 
 		PRINT 'Inserindo dados na tabela: px_cat_g1v2'
 		BULK INSERT raw_data_layer.px_cat_g1v2
-		FROM 'C:\Users\Rafael\Documents\datawarehouse\datasets\source_erp\PX_CAT_G1V2.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS
+		FROM '\datasets\source_erp\PX_CAT_G1V2.csv' -- CAMINHO DO ARQUIVO FONTE DOS DADOS | ADICIONE O CAMINHO DO SEU COMPUTADOR
 		WITH (
 			FIRSTROW = 2, 
 			FIELDTERMINATOR = ',' 
